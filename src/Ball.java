@@ -85,6 +85,7 @@ class Ball {
     public void move() {
         x = x + xSpeed;
         y = y + ySpeed;
+        // this changes the direction of the ball when it reached the minimum and maximum boundries
         if (x > s.width - radius || x < radius) {
             xSpeed = -xSpeed;
         }
